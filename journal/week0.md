@@ -12,7 +12,7 @@
 * Rollbar Account
 
 1. Used my existing Github account and used [ExamProCo](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023) repositry as a template.
-2. Watched [Gifted Lane's Playlist](https://www.youtube.com/playlist?list=PL6RfZggzDojS8y2RYkvdLcvTd8ZpxEDoT) and opened accounts for[Gitpod](https://gitpod.io/) ,[Momento](https://www.gomomento.com/), [HoneyComb.io](https://www.honeycomb.io/) and [Rollbar](https://rollbar.com)
+2. Watched [Gifted Lane's Playlist](https://www.youtube.com/playlist?list=PL6RfZggzDojS8y2RYkvdLcvTd8ZpxEDoT) and opened accounts for [Gitpod](https://gitpod.io/) ,[Momento](https://www.gomomento.com/), [HoneyComb.io](https://www.honeycomb.io/) and [Rollbar](https://rollbar.com)
 3. Created a New AWS account to be eligible fro the free tire.
 4. Watched [Andrew Brown's video](https://www.youtube.com/watch?v=A6_c-hJmehs) on adding the Gitpod Button.
 5. Bought a .link domain for Cohort: 2023-A1.
