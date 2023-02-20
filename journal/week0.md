@@ -69,7 +69,7 @@ to confirm my credentials were correct
 5. Setup billing Alarms
 ### Create a SNS topic
 - We need a SNS topic for the alarm to trigger
-- When the Alarm triggers the sns topic we will get a email hat we have hi the billing limit that we sett
+- When the Alarm triggers the sns topic we will get a email hat we have hi the billing limit that we set
 ```sh
 aws sns create-topic --name bootcamp-billing-alarm
 ```
@@ -85,9 +85,11 @@ We then have to check our email and confirm we want to subscribe o that topic.
 
 #### Creating the Alarm
 
-We set the ARN we recieved earlier under:- ```
+We set the ARN we recieved earlier under:- 
+```
 "AlarmActions"
 ```
+
 ```sh
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 ```
