@@ -86,7 +86,7 @@ to confirm my credentials were correct
 
 ```
 
-9. Created Budget
+9. Create Budget
 
 ## Stretch Homework
 1. Terraform billing alarms(to-do)
@@ -94,6 +94,7 @@ to confirm my credentials were correct
 3. Destroy your root account credentials, Set MFA, IAM role
 4. Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue
 5. CI/CD logical pipeline in Lucid Charts 
+![image](../_docs/assets/week0/cicd.png)
 ## Blog posts
 
 [dev.to---TODO](https://dev.to/joshdsy)
