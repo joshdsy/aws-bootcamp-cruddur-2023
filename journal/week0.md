@@ -66,7 +66,32 @@ gp env AWS_ACCOUNT_ID=
 Ran ``` aws sts get-caller-identity ```
 to confirm my credentials were correct
 
-5. Setup billing Alarms 
+5. Setup billing Alarms
+### Create a SNS topic
+- We need a SNS topic for the alarm to trigger
+- When the Alarm triggers the sns topic we will get a email hat we have hi the billing limit that we sett
+```sh
+aws sns create-topic --name bootcamp-billing-alarm
+```
+- when we get the ARN for the SNS topic we can subscribe to the topic by suppling our email address
+```sh
+aws sns subscribe \
+    --topic-arn TopicARN \
+    --protocol email \
+    --notification-endpoint someemail@exampleemail.com
+```
+
+We then have to check our email and confirm we want to subscribe o that topic.
+
+#### Creating the Alarm
+
+We set the ARN we recieved earlier under:- ```
+"AlarmActions"
+```
+```sh
+aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
+```
+
 
 6. Created Conceptual Diagram Cruddur in Lucid Charts.
 ![image](../_docs/assets/week0/conceptualdiag.png)
@@ -86,12 +111,30 @@ to confirm my credentials were correct
 
 ```
 
-9. Create Budget
+9. Create AWS Budget
+Since my AWS Account ID is set as a VAR I can complete the command
+```
+aws budgets create-budget \
+    --account-id $ACCOUNTID \
+    --budget file://aws/json/budget.json \
+    --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
+```
+I used this document as a a ref [create budget](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html)
 
 ## Stretch Homework
 1. Terraform billing alarms(to-do)
 2. Use boto3 and python and create billing alarms(to-do)
 3. Destroy your root account credentials, Set MFA, IAM role
+I Destroyed my root account by using 
+```sh
+ pwgen -s 96 1 
+ ```
+ and setting that as the root accont password and not saving that password
+ #### MFA has been set
+ ![image](../_docs/assets/week0/mfa.png)
+ #### I use a admin account I created to manage my account 
+![image](../_docs/assets/week0/createadminfinal.png)
+
 4. Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue
 5. CI/CD logical pipeline in Lucid Charts 
 ![image](../_docs/assets/week0/cicd.png)
