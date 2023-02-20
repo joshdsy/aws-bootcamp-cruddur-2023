@@ -67,8 +67,9 @@ to confirm my credentials were correct
  ![image](../_docs/assets/week0/mfa.png)
 
 3. Setup billing Alarms 
-4.
-5. Created Logical diagram for cruddur in Lucid charts
+4. Created Conceptual Diagram Cruddur in Lucid Charts.
+![image](../_docs/assets/week0/conceptualdiag.png)
+5. Created Logical diagram for Cruddur in Lucid Charts
 ![image](../_docs/assets/week0/logicaldiag.png)
 
 ## Stretch Homework
