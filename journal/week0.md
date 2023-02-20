@@ -66,3 +66,14 @@ to confirm my credentials were correct
 
  ![image](../_docs/assets/week0/mfa.png)
 
+3. Setup billing Alarms 
+4.
+5. Created Logical diagram for cruddur in Lucid charts
+![image](../_docs/assets/week0/logicaldiag.png)
+
+## Stretch Homework
+1. Terraform billing alarms(to-do)
+2. Use boto3 and python and create billing alarms(to-do)
+## Blog posts
+
+[dev.to---TODO](https://dev.to/joshdsy)
