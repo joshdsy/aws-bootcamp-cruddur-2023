@@ -1,4 +1,10 @@
 tasks:
+  - name: Initialize Frontend and Backend
+    init: |
+      cd /workspace/aws-bootcamp-cruddur-2023/backend-flask
+      pip3 install -r requirements.txt
+      cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
+      npm i
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
@@ -8,6 +14,16 @@ tasks:
       unzip awscliv2.zip
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
+  - name: postgres
+    init: |
+      curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
+      echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+      sudo apt update
+      sudo apt install -y postgresql-client-13 libpq-dev
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
+    - cweijan.vscode-postgresql-client2
+    - ms-azuretools.vscode-docker
+    - ms-python.python
+    - amazonwebservices.aws-toolkit-vscode

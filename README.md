@@ -1,4 +1,8 @@
 # FREE AWS Cloud Project Bootcamp
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
 
 - Application: Cruddur
 - Cohort: 2023-A1
@@ -17,8 +21,8 @@ At the start of the bootcamp you need to create a new Github Repository from thi
 
 The `/journal` directory contains
 
-- [ ] [Week 0](journal/week0.md)
-- [ ] [Week 1](journal/week1.md)
+- [X] [Week 0](journal/week0.md)
+- [X] [Week 1](journal/week1.md)
 - [ ] [Week 2](journal/week2.md)
 - [ ] [Week 3](journal/week3.md)
 - [ ] [Week 4](journal/week4.md)
