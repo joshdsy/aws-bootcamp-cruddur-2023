@@ -1,14 +1,41 @@
 # Week 1 — App Containerization
 ## Required Homework
-- [X] [Watch How to Ask for Technical Help]	(https://www.youtube.com/watch?v=tDPqmwKMP7Y&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=29)
-- [X] [Watched Grading Homework Summaries]	(https://www.youtube.com/watch?v=FKAScachFgk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
-- [X] [Watched Week 1 - Live Streamed Video]	(https://www.youtube.com/watch?v=zJnNe5Nv4tE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=22)
-- [X] [Remember to Commit Your Code]	(https://www.youtube.com/watch?v=b-idMgFFcpg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=23)
-- [X] [Watcked Chirag's Week 1 - Spending Considerations]	(https://www.youtube.com/watch?v=OAMHu1NiYoI&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=24)
-- [X] [Watched Ashish's Week 1 - Container Security Considerations]	(https://www.youtube.com/watch?v=OjZz4D0B-cA&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
-- [X] [Containerize Application (Dockerfiles, Docker Compose)]	(https://www.youtube.com/watch?v=zJnNe5Nv4tE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=22)
-- [ ] [Document the Notification Endpoint for the OpenAI Document]	(https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
-- [ ] [Write a Flask Backend Endpoint for Notifications]	(https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
-- [ ] [Write a React Page for Notifications]	(https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
-- [ ] [Run DynamoDB Local Container and ensure it works]	(https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
-- [ ] [Run Postgres Container and ensure it works]	(https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
+* Watched [How to Ask for Technical Help](https://youtu.be/tDPqmwKMP7Y) video.
+* Watched [Grading Homework Summaries](https://youtu.be/FKAScachFgk) video.
+* Watched [Week 1 Live Recorded Video](https://www.youtube.com/live/zJnNe5Nv4tE?feature=share) 
+* Watched [Commit Your Code](https://youtu.be/b-idMgFFcpg) video.
+* Watched [Chirag's Week 1 Spend Consideration](https://youtu.be/OAMHu1NiYoI) video.
+* Watched [Ashish's Week 1 Security Consideration](https://youtu.be/OjZz4D0B-cA) video.
+* Watched [Week 1 - Create the notification feature (Backend and Front)](https://youtu.be/k-_o0cCpksk) video.
+* Watched [Week 1 - DynamoDB and Postgres vs Docker](https://youtu.be/CbQNMaa6zTg)
+
+
+## Containerize Application (Docker files, Docker Compose)
+
+Built Backend container ran Trivy Vulnerability Scanner for Containers to check for Vulnerabilities.
+I think I spent(wasted?) alot of time trying to get zero vulnerabilities 
+![Backend](../_docs/assets/week1/backend.png)
+
+![Unset](../_docs/assets/week1/unset.png)
+
+
+
+After that did the same with the front end Built ran Trivy Vulnerability Scanner an pushed to DockerHub.
+
+Did a Andrew Brown and Labeled it 0.2 instead of 0.1
+
+![Frontend](../_docs/assets/week1/frontend.png)
+
+Pushed both images to DockerHub
+
+![DockerHub](../_docs/assets/week1/dockerhub.png)
+Here I got the backend working.
+![Backend working](../_docs/assets/week1/backend_working.png)
+ 
+Checked that Postgres was working from the docker-compose.
+![Postgres](../_docs/assets/week1/postgres.png
+Checked that I was able to access the Dynamodb from the container I had spun up via the docker-compose.
+![DynamoB](../_docs/assets/week1/dynamodb.png)
+Here I added the Swagger for notifications.
+![Swagger_notif](../_docs/assets/week1/swagger_notif.png)
+Need to finish all the typing! Iv spent too much time rewriting this(Ill come back to it)
