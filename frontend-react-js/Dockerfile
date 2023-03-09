@@ -1,7 +1,7 @@
-FROM node:16-alpine
+FROM node:16.18
 LABEL vendor="Bootcamp"
 LABEL built-by="josh"
-RUN apk add curl && npm install -g npm@9.5.1
+RUN apt update && apt install -y curl && npm install -g npm@9.6.1
 COPY . /frontend-react-js
 WORKDIR /frontend-react-js
 RUN npm install
