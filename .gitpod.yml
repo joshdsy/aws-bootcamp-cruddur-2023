@@ -27,3 +27,13 @@ vscode:
     - ms-azuretools.vscode-docker
     - ms-python.python
     - amazonwebservices.aws-toolkit-vscode
+
+ports:
+  - name: frontend
+    port: 3000
+    onOpen: ignore
+    visibility: public
+  - name: backend
+    port: 4567
+    onOpen: ignore
+    visibility: public
