@@ -37,3 +37,7 @@ ports:
     port: 4567
     onOpen: ignore
     visibility: public
+  - name: xray-daemon
+    port: 2000
+    onOpen: ignore
+    visibility: public

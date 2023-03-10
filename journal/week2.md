@@ -21,3 +21,13 @@ tracer = trace.get_tracer(__name__)
 ```
 
 ![Honeycomb](../_docs/assets/week2/honeycomb_traces.png)
+
+* My dataset got created when Cruddur started talking to honeycomb
+
+![Dataset_Honeycomb](../_docs/assets/week2/dataset_honeycomb.png)
+
+* Added Mock span data !
+
+* I ran a query and check the mock Data
+![Query](../_docs/assets/week2/run_query.png)
+![Mock_data](../_docs/assets/week2/check_data.pngg)
