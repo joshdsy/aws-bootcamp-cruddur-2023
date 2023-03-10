@@ -3,7 +3,8 @@ LABEL vendor="Bootcamp"
 LABEL built-by="josh"
 WORKDIR /backend-flask
 COPY requirements.txt requirements.txt
-RUN  apt update && apt install -y curl && pip install --upgrade pip && pip3 install -r requirements.txt
+RUN pip install --upgrade pip && pip3 install -r requirements.txt
+RUN apt update && apt install -y curl
 COPY . .
 ENV FLASK_ENV=development
 EXPOSE ${PORT}
