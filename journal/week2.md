@@ -30,4 +30,11 @@ tracer = trace.get_tracer(__name__)
 
 * I ran a query and check the mock Data
 ![Query](../_docs/assets/week2/run_query.png)
-![Mock_data](../_docs/assets/week2/check_data.pngg)
+![Mock_data](../_docs/assets/week2/check_data.png)
+
+* Got Cloudwatch logs to work fairly easy
+![Cloudwatch_logs](../_docs/assets/week2/cloudwatchlogs.png)
+
+* Got rollbar to send Data after rebooting the gitpod instance as the Rollbar api env did not get set
+
+![Rollbar](../_docs/assets/week2/rollbar.png)
