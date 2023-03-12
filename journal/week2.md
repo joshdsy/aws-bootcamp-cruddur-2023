@@ -4,8 +4,14 @@
 ### Video Watched
 * Watched [FREE AWS Cloud Project Bootcamp - Update 2023-02-23 Video](https://youtu.be/gQxzMvk6BzM).
 * Watched [Week 2 - Live Streamed Video – Honeycomb.io Setup](https://www.youtube.com/live/2GD9xCzRId4?feature=share).
+* Watched [Week 2 - Instrument X-Ray Video](https://youtu.be/n2DTsuBrD_A).
+* Watched [Week 2 – X-Ray Subsegments Solved Video](https://youtu.be/4SGTW0Db5y0)
+* Watched [Week 2 - CloudWatch Logs Video](https://youtu.be/ipdFizZjOF4).
+* Watched [Week 2 - Rollbar Video](https://youtu.be/xMBDAb5SEU4).
+* Watched [Week 2 – Github Codespaces Crash Course Video](https://youtu.be/L9KKBXgKopA).
 
 ### Work Done
+#### Honey Comb
 * Setup up Honeycomb as per the video
 * After alot of tshooting including adding trying to debug to the console , mixing up my branches
 Even adding this  code in  and removing it out  I got spans working .
@@ -32,9 +38,21 @@ tracer = trace.get_tracer(__name__)
 ![Query](../_docs/assets/week2/run_query.png)
 ![Mock_data](../_docs/assets/week2/check_data.png)
 
+#### AWS X-Ray
+
+* Completed all steps to implement AWS X-Ray tracing With subsegments
+
+![Xray_apply](_docs/assets/week2/xray_aws.png)
+![Xray](../_docs/assets/week2/xray_subsegment.png)
+![Xray](../_docs/assets/week2/xray_traces.png)
+![Xray](../_docs/assets/week2/xray_traces.png)
+![Xray_servicemap](../_docs/assets/week2/xray_servicemap.png)
+
+#### Cloud watch
 * Got Cloudwatch logs to work fairly easy
 ![Cloudwatch_logs](../_docs/assets/week2/cloudwatchlogs.png)
 
+#### Rollbar
 * Got rollbar to send Data after rebooting the gitpod instance as the Rollbar api env did not get set
 
 ![Rollbar](../_docs/assets/week2/rollbar.png)
