@@ -1,6 +1,15 @@
 from datetime import datetime, timedelta, timezone
+from aws_xray_sdk.core import xray_recorder
+import os
 class UserActivities:
   def run(user_handle):
+    # Xray
+    now = datetime.now(timezone.utc).astimezone()
+
+    with xray_recorder.in_subsegment('UserData'):
+      xray_recorder.current_subsegment().put_metadata('username', user_handle)
+      xray_recorder.current_subsegment().put_metadata('timestamp', now.isoformat())
+
     model = {
       'errors': None,
       'data': None
